@@ -1,4 +1,4 @@
-class calendarsController < applicationController
+class CalendarsController < ApplicationController
 
   # １週間のカレンダーと予定が表示されるページ
   def index

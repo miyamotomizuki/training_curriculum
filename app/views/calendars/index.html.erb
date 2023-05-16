@@ -22,24 +22,3 @@
     </div>
   <% end %>
 </div>
-<<<<<<< HEAD
-=======
-<div>
-  <div class='calendar'>
-    <% @week_days.each do |day| %>
-      <div class='item'>
-        <div class='date'>
-          <%= day[:month] %>/<%= day[:date] %><%= day[:weekday] %>
-        </div>
-        <ul class='content'>
-        <% if day[:plans].length != 0 %>
-       　 <% day[:plans].each do |plan| %>
-          　<li class='plan-list'>・<%= plan %></li>
-        　<% end %>
-     　 <% end %>
-     　 </ul>
-    　</div>
-  　<% end %>
-  </div>
-</div>
->>>>>>> 1fca34f6161bbabf44d0b94cee10202cb5d05202
