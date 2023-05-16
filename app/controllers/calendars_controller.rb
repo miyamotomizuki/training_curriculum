@@ -1,5 +1,4 @@
-class calendarsController < applicationController
-
+class CalendarsController < ApplicationController
   # １週間のカレンダーと予定が表示されるページ
   def index
     get_week
@@ -15,7 +14,7 @@ class calendarsController < applicationController
   private
 
   def plan_params
-    params.require(:calendars).permit(:date, :plan)
+    params.require(:plan).permit(:date, :plan)
   end
 
   def get_week
@@ -37,6 +36,5 @@ class calendarsController < applicationController
       days = {month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans }
       @week_days.push(days)
     end
-
   end
 end
